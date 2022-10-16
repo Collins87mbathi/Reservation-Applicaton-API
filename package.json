@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node-pre-gyp": "^0.16.0",
+    "node": "14.x",
+    "npm": "6.x"
+  },
   "scripts": {
     "start": "node index.js"
   },
