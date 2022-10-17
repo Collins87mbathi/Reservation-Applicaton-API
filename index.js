@@ -1,5 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
 const ErrorHandler = require("./ErrorHandler/ErrorHandler");
 const CONNECTDB = require("./database/connect");
 const TableRoute = require("./routers/Table");
@@ -10,7 +11,7 @@ const PORT = process.env.PORT  || 5000;
 
 //middlewares
 app.use(express.json());
-
+app.use(cors({origin: '*'}));
 //database
 CONNECTDB(process.env.MONGO_URL);
 
