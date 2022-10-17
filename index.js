@@ -19,8 +19,8 @@ CONNECTDB(process.env.MONGO_URL);
 app.use('/api/reservation',ReservationRoute);
 app.use('/api/table',TableRoute);
 
-app.get('/', ()=> {
-    console.log('this is a reservation api');
+app.get('/', (req,res)=> {
+ res.send("this is a reservation api");
 })
 
 
