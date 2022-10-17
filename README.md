@@ -1,4 +1,4 @@
-# Reservation_backend
+# Reservation Application API
 
 ## :small_blue_diamond: Objective 
 This is A reservation API that has all CRUD  operations 
